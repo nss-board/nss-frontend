@@ -10,7 +10,7 @@ export default function LoginDesktop() {
   const handleSubmit = async () => {
     console.log("log");
     try {
-      fetch("/api/user/login", {
+      fetch("http://134.185.118.29:8080/user/login", {
         method: "POST",
         credentials: "include",
         headers: {
