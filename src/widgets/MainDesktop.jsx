@@ -13,7 +13,7 @@ export default function HeaderDesktop() {
   useEffect(() => {
     // 이거 서버에서 불러오는거 따로 빼야함
     try {
-      const articleList = fetch("http://134.185.118.29:8080/post/list ", {
+      const articleList = fetch("//134.185.118.29:8080/post/list ", {
         method: "GET",
         credentials: "include",
       })
