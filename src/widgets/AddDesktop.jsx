@@ -28,7 +28,7 @@ export default function AddDesktop() {
   const [verified, setVerified] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
-    const logined = fetch("http://134.185.118.29:8080/user/verify", {
+    const logined = fetch("//134.185.118.29:8080/user/verify", {
       method: "GET",
       credentials: "include",
     })
@@ -63,7 +63,7 @@ export default function AddDesktop() {
   const handleSubmit = () => {
     try {
       console.log("click");
-      fetch("http://134.185.118.29:8080/post/write", {
+      fetch("//134.185.118.29:8080/post/write", {
         method: "POST",
         credentials: "include",
         headers: {
