@@ -10,8 +10,7 @@ export default function FooterDesktop({}) {
         이용약관 | 개인정보처리방침
       </div>
       <div className="footer-desc">
-        시작의 불꽃 소리가 우리의 맘을 울려 <br /> 하나씩 이 순간을 이겨낼수
-        있게
+        Past and future <br /> Run for the future
       </div>
       <div className="footer-space" />
     </div>
