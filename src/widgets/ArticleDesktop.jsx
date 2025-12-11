@@ -31,7 +31,7 @@ export default function ArticleDesktop() {
 
     if (post.comments.length != 0) {
       try {
-        fetch("http://134.185.118.29:8080/post/comment", {
+        fetch("//134.185.118.29:8080/post/comment", {
           method: "POST",
           credentials: "include",
           headers: {
@@ -48,7 +48,7 @@ export default function ArticleDesktop() {
   useEffect(() => {
     try {
       const temp = fetch(
-        "http://134.185.118.29:8080/post/giveMeOnlyADetailedPostWithIdWhichIsProvidedFromUser/" + id,
+        "//134.185.118.29:8080/post/giveMeOnlyADetailedPostWithIdWhichIsProvidedFromUser/" + id,
         {
           method: "GET",
           credentials: "include",
@@ -82,7 +82,7 @@ export default function ArticleDesktop() {
       console.error(error);
     }
 
-    fetch("http://134.185.118.29:8080/user/verify", {
+    fetch("//134.185.118.29:8080/user/verify", {
       method: "GET",
       credentials: "include",
     })
@@ -96,7 +96,7 @@ export default function ArticleDesktop() {
     // setHeartCount(post.likes.length);
     if (!liked) {
       setLiked(true);
-      fetch("http://134.185.118.29:8080/post/like", {
+      fetch("//134.185.118.29:8080/post/like", {
         method: "POST",
         credentials: "include",
         headers: {
