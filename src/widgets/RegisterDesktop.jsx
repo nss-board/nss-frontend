@@ -13,7 +13,7 @@ export default function RegisterDesktop() {
   const [verified, setVerified] = useState(false);
   const [sended, setSended] = useState(false);
   const handleSendCode = () => {
-    fetch("/api/user/sendCode", {
+    fetch("http://134.185.118.29:8080/user/sendCode", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -80,7 +80,7 @@ export default function RegisterDesktop() {
                 <div
                   className="register-phone-confirm-button"
                   onClick={() => {
-                    fetch("/api/user/sendCode", {
+                    fetch("http://134.185.118.29:8080/user/sendCode", {
                       method: "POST",
                       credentials: "include",
                       headers: {
@@ -119,7 +119,7 @@ export default function RegisterDesktop() {
                 <div
                   className="register-phone-confirm-button"
                   onClick={() => {
-                    fetch("/api/user/verifyCode", {
+                    fetch("http://134.185.118.29:8080/user/verifyCode", {
                       method: "POST",
                       credentials: "include",
                       headers: {
