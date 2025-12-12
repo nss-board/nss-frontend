@@ -31,7 +31,7 @@ export default function ArticleDesktop() {
 
     if (post.comments.length != 0) {
       try {
-        fetch("//134.185.118.29:8080/post/comment", {
+        fetch("https://nss-api.kro.kr/post/comment", {
           method: "POST",
           credentials: "include",
           headers: {
@@ -48,7 +48,7 @@ export default function ArticleDesktop() {
   useEffect(() => {
     try {
       const temp = fetch(
-        "//134.185.118.29:8080/post/giveMeOnlyADetailedPostWithIdWhichIsProvidedFromUser/" + id,
+        "https://nss-api.kro.kr/post/giveMeOnlyADetailedPostWithIdWhichIsProvidedFromUser/" + id,
         {
           method: "GET",
           credentials: "include",
@@ -82,7 +82,7 @@ export default function ArticleDesktop() {
       console.error(error);
     }
 
-    fetch("//134.185.118.29:8080/user/verify", {
+    fetch("https://nss-api.kro.kr/user/verify", {
       method: "GET",
       credentials: "include",
     })
@@ -96,7 +96,7 @@ export default function ArticleDesktop() {
     // setHeartCount(post.likes.length);
     if (!liked) {
       setLiked(true);
-      fetch("//134.185.118.29:8080/post/like", {
+      fetch("https://nss-api.kro.kr/post/like", {
         method: "POST",
         credentials: "include",
         headers: {
