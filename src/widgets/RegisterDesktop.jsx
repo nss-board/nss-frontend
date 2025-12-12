@@ -13,7 +13,7 @@ export default function RegisterDesktop() {
   const [verified, setVerified] = useState(false);
   const [sended, setSended] = useState(false);
   const handleSendCode = () => {
-    fetch("//134.185.118.29:8080/user/sendCode", {
+    fetch("https://nss-api.kro.kr/user/sendCode", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -80,7 +80,7 @@ export default function RegisterDesktop() {
                 <div
                   className="register-phone-confirm-button"
                   onClick={() => {
-                    fetch("//134.185.118.29:8080/user/sendCode", {
+                    fetch("https://nss-api.kro.kr/user/sendCode", {
                       method: "POST",
                       credentials: "include",
                       headers: {
@@ -119,7 +119,7 @@ export default function RegisterDesktop() {
                 <div
                   className="register-phone-confirm-button"
                   onClick={() => {
-                    fetch("//134.185.118.29:8080/user/verifyCode", {
+                    fetch("https://nss-api.kro.kr/user/verifyCode", {
                       method: "POST",
                       credentials: "include",
                       headers: {
