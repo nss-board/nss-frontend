@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function HeaderDesktop({}) {
   const [logined, setLogined] = useState(false);
   useEffect(() => {
-    fetch("//134.185.118.29:8080/user/verify", {
+    fetch("https://nss-api.kro.kr/user/verify", {
       method: "GET",
       credentials: "include",
     })
@@ -34,7 +34,7 @@ export default function HeaderDesktop({}) {
             <div
               className="header-loginbutton"
               onClick={() => {
-                fetch("//134.185.118.29:8080/user/logout", {
+                fetch("https://nss-api.kro.kr/user/logout", {
                   method: "POST",
                   credentials: "include", // 쿠키 포함 요청
                 }).then(() => {
